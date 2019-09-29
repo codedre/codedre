@@ -9,11 +9,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  height: 100%;
 `;
 
 const Title = styled.h1`
@@ -23,6 +19,12 @@ const Title = styled.h1`
   letter-spacing: ${-1.05/140}em;
   text-transform: uppercase;
   width: 100%;
+
+  @media (min-width: 768px) {
+    font-size: ${60/16}em;
+  line-height: ${70/60};
+  letter-spacing: ${-0.8/60}em;
+  }
 `;
 
 const IndexPage = () => (
